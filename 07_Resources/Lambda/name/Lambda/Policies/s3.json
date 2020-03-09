@@ -3,7 +3,7 @@
 		"Type": "AWS::IAM::Policy",
 		"Properties": {
 			"PolicyName": "s3",
-			"Roles": [ { "Ref": "LambdaNameRole" } ],
+			"Roles": [ { "Ref": "LambdaXXXRole" } ],
 			"PolicyDocument": {
 				"Version": "2012-10-17",
 				"Statement": [

@@ -12,9 +12,9 @@
 					"MatchEquals": "refs/heads/{Branch}"
 				}
 			],
-			"TargetPipeline": { "Ref": "CodePipelineName" },
+			"TargetPipeline": { "Ref": "CodePipelineXXX" },
 			"TargetAction": "Material",
-			"TargetPipelineVersion": { "Fn::GetAtt": [ "CodePipelineName", "Version" ]},
+			"TargetPipelineVersion": { "Fn::GetAtt": [ "CodePipelineXXX", "Version" ]},
 			"RegisterWithThirdParty": true
 		}
 	}

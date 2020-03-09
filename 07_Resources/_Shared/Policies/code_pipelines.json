@@ -3,7 +3,7 @@
 		"Type": "AWS::IAM::Policy",
 		"Properties": {
 			"Roles": [
-				{ "Ref": "CodePipelineNameRole" }
+				{ "Ref": "CodePipelineXXXRole" }
 			],
 			"PolicyName": "s3_artifact_put",
 			"PolicyDocument": {

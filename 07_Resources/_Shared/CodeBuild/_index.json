@@ -3,7 +3,7 @@
 		"Type": "AWS::CodeBuild::Project",
 		"DependsOn": "CodeBuildRole",
 		"Properties": {
-			"Name": "name",
+			"Name": "xxx_reusable",
 			"ServiceRole": { "Fn::GetAtt": ["CodeBuildRole", "Arn"] },
 			"TimeoutInMinutes": 60,
 			"Source": {
@@ -16,7 +16,7 @@
 			"Environment": {
 				"Type": "LINUX_CONTAINER",
 				"ComputeType": "BUILD_GENERAL1_SMALL",
-				"Image": "aws/codebuild/nodejs:8.11.0"
+				"Image": "aws/codebuild/standard:3.0"
 			}
 		}
 	}
