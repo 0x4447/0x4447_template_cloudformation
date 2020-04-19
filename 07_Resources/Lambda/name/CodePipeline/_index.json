@@ -1,14 +1,14 @@
 {
 	"CodePipelineXXX": {
 		"Type": "AWS::CodePipeline::Pipeline",
-		"DependsOn": "CodePipelineNameRole",
+		"DependsOn": "CodePipelineXXXRole",
 		"Properties": {
 			"Name": "lambda_xxx",
 			"ArtifactStore": {
 				"Location": { "Ref": "CodePipelineArtifactsParam" },
 				"Type": "S3"
 			},
-			"RoleArn": { "Fn::GetAtt": ["CodePipelineNameRole", "Arn" ] },
+			"RoleArn": { "Fn::GetAtt": ["CodePipelineXXXRole", "Arn" ] },
 			"Stages": [
 				{
 					"Name": "Get",

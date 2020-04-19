@@ -8,7 +8,7 @@
 			},
 			"Handler": "index.handler",
 			"MemorySize": 128,
-			"Role": { "Fn::GetAtt": ["LambdaNameRole", "Arn"] },
+			"Role": { "Fn::GetAtt": ["LambdaXXXRole", "Arn"] },
 			"Runtime": "nodejs12.x",
 			"Timeout": 60,
 			"Environment": {
